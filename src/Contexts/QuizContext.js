@@ -1,20 +1,27 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
+import questionsSrc from '../questions.json'
 
 const QuizContext = createContext();
 
 const SECS_PER_QUESTION = 10;
 
 const initialState = {
-  questions: [],
+  // FOR USE IN LOCAL JSON SERVER OPTION
+  // questions: [],
+  // status: "loading",
 
-  // 'loading', 'error', 'ready', 'active', 'finished'
-  status: "loading",
+  //  FOR PULLING DIRECTLY FILE 
+  questions: questionsSrc.questions,
+  status: "ready",
+
   index: 0,
   answer: null,
   points: 0,
   highscore: 0,
   secondsRemaining: null,
 };
+
+console.log(questionsSrc)
 
 function reducer(state, action) {
   switch (action.type) {
@@ -76,12 +83,13 @@ function QuizProvider({ children }) {
     0
   );
 
-  useEffect(function () {
-    fetch("http://localhost:9000/questions")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed" }));
-  }, []);
+  // LEARNING PURPOSES FOR useEffect HOOK, CANNOT DEPLOY DIRECTLY ON NETLIFY
+  // useEffect(function () {
+  //   fetch("http://localhost:9000/questions")
+  //     .then((res) => res.json())
+  //     .then((data) => dispatch({ type: "dataReceived", payload: data }))
+  //     .catch((err) => dispatch({ type: "dataFailed" }));
+  // }, []);
 
   return (
     <QuizContext.Provider

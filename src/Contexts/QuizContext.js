@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useContext, useReducer } from "react";
 import questionsSrc from '../questions.json'
 
 const QuizContext = createContext();

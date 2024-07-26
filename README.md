@@ -1,6 +1,6 @@
 # React Quiz
 
-**Note: This project is based on the [The Ultimate React Course by Jonas Schmedtmann](https://www.udemy.com/course/the-ultimate-react-course/)**.
+**Note: This project is based on [The Ultimate React Course by Jonas Schmedtmann](https://www.udemy.com/course/the-ultimate-react-course/)**.
 
 The React Quiz app is a demo of several React concepts that quizzes the user on some basic questions about React itself. The app itself employs the Context API and useReducer hook to manage state. The quiz features 15 questions with answers displayed for user review and a scoring system.
 

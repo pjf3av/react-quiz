@@ -4,6 +4,8 @@
 
 The React Quiz app is a demo of several React concepts that quizzes the user on some basic questions about React itself. The app itself employs the Context API and useReducer hook to manage state. The quiz features 15 questions with answers displayed for user review and a scoring system.
 
+**Live Deployment: [https://pjf3av-react-quiz.netlify.app/](https://pjf3av-react-quiz.netlify.app/)**.
+
 ## Key Features
 - **Dynamic Question Handling:** Questions and answers are loaded dynamically for each quiz session.
 - **State Management with Context API and useReducer:** Organized management of quiz state, including current question, selected answers, and score.

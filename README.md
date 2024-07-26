@@ -11,3 +11,44 @@ The React Quiz app is a demo of several React concepts that quizzes the user on 
 - **Score Calculation:** Displays the user's score upon completing the quiz.
 - **Progress Tracking:** Users can monitor their progress throughout the quiz.
 - **Restart Capability:** Option to restart the quiz at any point.
+
+## JSON Server
+
+The main branch of this repo relies on a live JSON server, a simulation of interaction with a backend server to provide question data. The live version (on the "netlify" branch) loads the questions directly from the JSON file in the "src" folder. 
+
+## Getting Started
+To clone and deploy this project locally, follow these simple steps.
+
+### Prerequisites
+
+First, make sure you have the latest version of npm:
+
+```bash
+npm install npm@latest -g
+```
+
+### Installation
+
+1. Clone this repo
+
+```
+git clone https://github.com/pjf3av/react-quiz.git
+```
+
+2. Install NPM packages
+
+```
+npm i
+```
+
+3. Start JSON server
+
+```
+npm run server
+```
+
+4. Start server
+
+```
+npm start
+```
